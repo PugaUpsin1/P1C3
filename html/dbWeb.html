@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base de datos con firebase</title>
+    <script src="/js/configuracion.js" type="module"></script>
+    <style>
+        section{
+            width: 1200px;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h2>Alumnos</h2>
+    <label for="">Matricula:</label>
+    <input type="text" id="matricula" name="matricula" required="true">
+    <label for="">Nombre</label>
+    <input type="text" id="nombre" name="nombre" required="true">
+    <label for="">Carrera</label>
+    <input type="text" name="carrera" id="carrera">
+    <select name="genero" id="genero">
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="no definido">No definido</option>
+    </select>
+    <hr>
+    <center>
+        <h3>Imagen</h3>
+    </center>
+    <hr>
+    <label for="">Nombre de la Imagen</label>
+    <input type="text" name="imgNombre" id="imgNombre" size="20" readonly="true">
+    <label for="">URL</label>
+    <input type="text" name="url" id="url" size="20" readonly="true">
+    <br>
+    <label for="">selecciona la imagen jpg,jpeg,png</label>
+    <input type="file" name="archivo" id="archivo" accept=".jpg , .jpeg , .png">
+    <br>
+    <br>
+    <hr>
+    <center>
+        <img id="imagen" src="/img/iconmonstr-user-6-96.png" alt="Alumno">
+        <button id="verImagen" name="verImagen">Clic para MOSTRAR IMAGEN</button>
+    </center>
+
+
+
+    
+    <h4>Acciones</h4>
+    <button id="btnInsertar">Insertar</button>
+    <button id="btnBuscar">Buscar</button>
+    <button id="btnActualizar">Actualizar</button>
+    <button id="btnBorrar">Borrar Alumno</button>
+    <button id="btnLimpiar">Limpiar</button>
+    <button id="btnMostrar">Mostrar Alumnos</button>
+
+
+
+    <br>
+    <br>
+    <hr>
+    <h3>listado de alumnos</h3>
+    <section id="lista">
+
+    </section>
+
+</body>
+</html>
